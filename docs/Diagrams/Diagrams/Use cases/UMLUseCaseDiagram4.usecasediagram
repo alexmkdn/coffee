@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5851e8b0-f7a0-4e53-aa94-12cf58dcb8b6" name="UMLUseCaseDiagram4" linkedPackageId="8048568d-6d36-4d5b-8f52-52cbb46a881d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="a26b6c8b-a67e-4386-b7e3-5d987150b8ec">
+      <elementDefinition Id="3825eec4-9d32-4d9f-b965-d3e9ad89d85d" />
+      <body>Входная точка денежных средств для банковской системы. Упрощение обусловлено типом проекта(приложение для образовательных целей).</body>
+      <annotatedElements>
+        <useCaseMoniker Id="5280fb22-824b-47d2-a10b-9034f5cf8a6d" LastKnownName="Пополнить счет" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="d9b35936-32a8-4cc9-ad85-99e800b1904a">
+      <profileInstance Id="8d7502d8-9bf9-44ad-be4b-0178226c2d59" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9df92260-c072-4504-a24a-e95c6ea7dde7">
+      <profileInstance Id="7a2fe7e1-acc6-47a0-a2f8-768c808a02e0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="86bb2112-d532-4bb8-bb09-6040c66bbb39" name="Панель администрирования" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cc834bfe-4c1f-4a1a-a458-ba22dca95836" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="56fda073-4e28-4907-bd23-171380ee764d" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2fb34f2-2205-4677-960c-9653a2a03fc7" />
+        <targetEnds>
+          <association Id="3902b81f-101b-400d-995d-57e738e5b69e" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Создать счет" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e609f69a-a2b4-4d5d-82e0-e444c0e4d295" LastKnownName="Создать счет" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2fb1b9e-e85b-49ce-9015-9ecbcc7a9205" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aea07c2b-f040-4f8e-8745-86fc19894591" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60fa859f-8518-4462-b592-19ab417bf898" name="Создать счет" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f1687de2-e616-438c-adf1-ed0778fc4d77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="efb64ec3-cfad-464e-921e-e8b94f6320d4" />
+          </association>
+          <association Id="80b45fff-203f-46f9-a84f-44e698d39a60" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Удалить счет" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="19a0c3d7-f840-494d-8b91-2e14d2df7768" LastKnownName="Удалить счет" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c17e4885-2802-4c8e-9bd0-de0f9436127a" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="faf6d7b9-2131-42ca-b88c-20e9b8ee1e4c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3745cd2d-bec2-426a-9b4e-d5a5fb1efbdc" name="Удалить счет" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0837d001-58a6-4a03-8c8c-b4432c4c9ccc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="34c62a80-86bf-4d53-800c-375bfa13542d" />
+          </association>
+          <association Id="62ee9edc-bcd3-497b-9ee2-ea7deeb4a245" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Пополнить счет" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5280fb22-824b-47d2-a10b-9034f5cf8a6d" LastKnownName="Пополнить счет" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a663f21b-573b-4143-9a2d-c7378182747d" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60c0c62b-b975-4261-89cc-b82f120b59b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abcde06c-96ed-4f2b-8752-b77209506ecf" name="Пополнить счет" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd942cb0-3066-4176-9cd7-a690689f615f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d8c48cb5-bb22-405b-83e8-08fa6812ef5d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="e609f69a-a2b4-4d5d-82e0-e444c0e4d295" name="Создать счет" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0dd1315-a3d5-4a20-9ae8-64e1c93f1684" />
+        <subjects>
+          <subsystemMoniker Id="86bb2112-d532-4bb8-bb09-6040c66bbb39" LastKnownName="Панель администрирования" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="19a0c3d7-f840-494d-8b91-2e14d2df7768" name="Удалить счет" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3d28a9f8-5c03-4d2e-b9b6-d797f9935967" />
+        <subjects>
+          <subsystemMoniker Id="86bb2112-d532-4bb8-bb09-6040c66bbb39" LastKnownName="Панель администрирования" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5280fb22-824b-47d2-a10b-9034f5cf8a6d" name="Пополнить счет" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="941cb042-856b-48ab-9320-80b0d8c91882" />
+        <subjects>
+          <subsystemMoniker Id="86bb2112-d532-4bb8-bb09-6040c66bbb39" LastKnownName="Панель администрирования" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8048568d-6d36-4d5b-8f52-52cbb46a881d" name="Diagrams">
+    <elementDefinition Id="5c407168-d898-4740-8518-8f66971621f4" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram2">
+  <useCaseModelRootMoniker Id="815bf2c8-0212-4fb0-ab44-c428477acb1e" />
+  <nestedChildShapes>
+    <actorShape Id="b2eda4e0-8087-454a-9483-6e0459478859" absoluteBounds="1.875, 2.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="04e6bcc5-4d57-422b-82a1-890ae62bb415" LastKnownName="Клиент" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="5a8245a6-7c4c-4e06-914b-1d5487330ad1" absoluteBounds="2.875, 1.125, 3.125, 2.5" customColor="White">
+      <subsystemMoniker Id="00d23050-bbfc-485d-947c-80f3739ffcac" LastKnownName="Панель управления счетом" />
+      <nestedChildShapes>
+        <useCaseShape Id="a2cdcae8-87e0-472b-9596-16f7f2b14fcd" absoluteBounds="3.375, 1.75, 1.75, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="45a6aca0-5493-40d3-b443-5ef9a6ed93a7" LastKnownName="Заблокировать карту" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="0fe8cd9c-d615-4c30-91b9-8306f18e692a" absoluteBounds="3.375, 2.5, 1.75, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="457c26c8-bf22-4e61-8926-66f6893126c7" LastKnownName="Разблокировать карту" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(2.375 : 2.44117647058824); (3.57456104383508 : 2.15892681321527)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="402261c0-87cc-42f2-bf4e-ca09c744f5f8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="b2eda4e0-8087-454a-9483-6e0459478859" />
+        <useCaseShapeMoniker Id="a2cdcae8-87e0-472b-9596-16f7f2b14fcd" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(2.375 : 2.52941176470588); (3.44090666383462 : 2.65481254868643)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="dfa296ed-a4c0-45a7-8579-eb32ceaddcc8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="b2eda4e0-8087-454a-9483-6e0459478859" />
+        <useCaseShapeMoniker Id="0fe8cd9c-d615-4c30-91b9-8306f18e692a" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

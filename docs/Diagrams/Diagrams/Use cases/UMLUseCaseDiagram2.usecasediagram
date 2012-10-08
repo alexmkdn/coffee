@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="815bf2c8-0212-4fb0-ab44-c428477acb1e" name="UMLUseCaseDiagram2" linkedPackageId="71e2351c-703f-499a-bc6d-1573304fc4a3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="5695ae16-cf1f-480e-ad46-5c3ed9875e0f">
+      <profileInstance Id="12c38b68-933e-4a64-a821-1206fc2da85c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3996dd01-fd94-4009-bdc3-797024c99743">
+      <profileInstance Id="f032e0fe-f593-40d9-ace8-0031f06a91d7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="00d23050-bbfc-485d-947c-80f3739ffcac" name="Панель управления счетом" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8d42de6c-bbba-4fa1-9e73-c938fe7dc028" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="04e6bcc5-4d57-422b-82a1-890ae62bb415" name="Клиент" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a56902f2-0d3a-4e6d-a6fa-3399aa95c36c" />
+        <targetEnds>
+          <association Id="402261c0-87cc-42f2-bf4e-ca09c744f5f8" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Заблокировать карту" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="45a6aca0-5493-40d3-b443-5ef9a6ed93a7" LastKnownName="Заблокировать карту" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="70eaa1b5-8ff8-4679-82a8-19366a94d2ab" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e2615ce-c5db-43ae-bdff-58d4a1fe8806" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f18d762-007c-490b-925c-ae6c7f8ccae1" name="Заблокировать карту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a182d55-c48d-467a-9f68-dac394e2b622" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cdd50b94-153c-4de8-b330-412acbb2263d" />
+          </association>
+          <association Id="dfa296ed-a4c0-45a7-8579-eb32ceaddcc8" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Разблокировать карту" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="457c26c8-bf22-4e61-8926-66f6893126c7" LastKnownName="Разблокировать карту" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac7feed8-083f-4da5-8acd-bbae68bf200b" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="537797a9-f7a2-4ad7-9466-f77def8d5417" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c07fa6e2-cbe8-41aa-9905-82e9782532a7" name="Разблокировать карту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a69179e2-b6a0-4c49-bfaf-3c8a6d31fab4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9324addf-84bc-4cff-9e05-54397c8ec7b7" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="45a6aca0-5493-40d3-b443-5ef9a6ed93a7" name="Заблокировать карту" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1188867f-24d6-4e67-a2df-e5a7d89b6040" />
+        <subjects>
+          <subsystemMoniker Id="00d23050-bbfc-485d-947c-80f3739ffcac" LastKnownName="Панель управления счетом" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="457c26c8-bf22-4e61-8926-66f6893126c7" name="Разблокировать карту" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="828bbd61-5642-4574-8eb8-2ba066af11e8" />
+        <subjects>
+          <subsystemMoniker Id="00d23050-bbfc-485d-947c-80f3739ffcac" LastKnownName="Панель управления счетом" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="71e2351c-703f-499a-bc6d-1573304fc4a3" name="Diagrams">
+    <elementDefinition Id="5c407168-d898-4740-8518-8f66971621f4" />
+  </package>
+</useCaseModelRoot>

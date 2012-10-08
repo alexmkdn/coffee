@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram4">
+  <useCaseModelRootMoniker Id="5851e8b0-f7a0-4e53-aa94-12cf58dcb8b6" />
+  <nestedChildShapes>
+    <actorShape Id="9229f492-c448-4a45-b5e2-c3ff8dd06f6a" absoluteBounds="1.875, 2.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="56fda073-4e28-4907-bd23-171380ee764d" LastKnownName="Администратор" />
+      <relativeChildShapes />
+    </actorShape>
+    <commentShape Id="9ae9345d-ee2c-4c82-978a-2a0f58067dc9" absoluteBounds="5.125, 2.75, 1.75, 1" customColor="251, 247, 200">
+      <commentMoniker Id="a26b6c8b-a67e-4386-b7e3-5d987150b8ec" />
+      <relativeChildShapes />
+    </commentShape>
+    <SubsystemShape Id="f5b683d5-55bb-4ab1-bae8-d554a64af36b" absoluteBounds="2.875, 1.375, 2.125, 2.5" customColor="White">
+      <subsystemMoniker Id="86bb2112-d532-4bb8-bb09-6040c66bbb39" LastKnownName="Панель администрирования" />
+      <nestedChildShapes>
+        <useCaseShape Id="84a9f02d-68f3-4f9d-858b-764f753dede9" absoluteBounds="3.375, 1.875, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="e609f69a-a2b4-4d5d-82e0-e444c0e4d295" LastKnownName="Создать счет" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="0464dcc4-37a0-4591-bb67-099ce1faffc9" absoluteBounds="3.375, 2.5, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="19a0c3d7-f840-494d-8b91-2e14d2df7768" LastKnownName="Удалить счет" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="42c6099e-eb34-4387-8672-d36669c9c679" absoluteBounds="3.375, 3.125, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5280fb22-824b-47d2-a10b-9034f5cf8a6d" LastKnownName="Пополнить счет" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(2.375 : 2.66379310344828); (3.49307710041447 : 2.27824927571915)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="3902b81f-101b-400d-995d-57e738e5b69e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9229f492-c448-4a45-b5e2-c3ff8dd06f6a" />
+        <useCaseShapeMoniker Id="84a9f02d-68f3-4f9d-858b-764f753dede9" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(2.375 : 2.75); (3.375 : 2.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="80b45fff-203f-46f9-a84f-44e698d39a60" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9229f492-c448-4a45-b5e2-c3ff8dd06f6a" />
+        <useCaseShapeMoniker Id="0464dcc4-37a0-4591-bb67-099ce1faffc9" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(2.375 : 2.83620689655172); (3.49307710041447 : 3.22175072428085)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="62ee9edc-bcd3-497b-9ee2-ea7deeb4a245" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9229f492-c448-4a45-b5e2-c3ff8dd06f6a" />
+        <useCaseShapeMoniker Id="42c6099e-eb34-4387-8672-d36669c9c679" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <commentConnector edgePoints="[(5.125 : 3.375); (4.5 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="9ae9345d-ee2c-4c82-978a-2a0f58067dc9" />
+        <useCaseShapeMoniker Id="42c6099e-eb34-4387-8672-d36669c9c679" />
+      </nodes>
+    </commentConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b066a11d-64cb-44e5-b501-528ef31cd317" name="UMLUseCaseDiagram3" linkedPackageId="b3a5e311-3178-4b31-82e7-8ee2e9ede038" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="50deaddc-67ce-4850-be3d-6bb45b5e6893">
+      <profileInstance Id="86c2e678-5cbb-4b2a-9e7b-e45d369f4b61" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fbd4e328-9b9e-4af0-9cba-0b3995e5385d">
+      <profileInstance Id="38b17a25-a8a7-477b-aad4-d7615de14833" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" name="Операции с денежными средствами" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="5464b02d-55fd-4311-a5b8-69d649e285a4" name="Клиент" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="93a1cbb4-c931-4a7b-9723-f3aac4c16e7a" />
+        <targetEnds>
+          <association Id="ab191f56-745b-48ee-8475-fdd95eca2e35" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Платеж" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="993b5a21-3f4e-40a7-8fbf-7d927a880c9e" LastKnownName="Платеж" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0372ec89-dcbb-4907-ab45-68e2f8760c27" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="42d64154-42d5-45c3-93d8-93a43e86790d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d39e8e4-f6c5-4177-a819-5e6cb2b38fd8" name="Платеж" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a2af252f-22fe-4a72-9372-7b700634e4b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a31583fa-326e-4943-a450-f7386673ede8" />
+          </association>
+          <association Id="295ea021-7e90-4a1b-b63b-5c3a62353ab3" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Перевод" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f8700e74-83f2-4ca6-8f07-4d4a6610aa13" LastKnownName="Перевод" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="994e4923-9133-491a-ba01-217c4be9c743" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2e7cd368-c784-4e4c-9322-91dc81f75661" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6fac92b-4b8d-4d34-bb77-008d78697ec9" name="Перевод" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f4284597-2397-484c-b15c-d8b56c5c6c62" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0969a81f-e7b9-43f9-a16a-7a8706c2f193" />
+          </association>
+          <association Id="0817ac42-508d-4f21-a849-0c4d72b8a9e8" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Просмотреть историю" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="06b8f96b-8f06-4d33-a93a-52345659dd35" LastKnownName="Просмотреть историю" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="194aff37-2bc2-4481-9953-ec8b48033a89" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5c5cfd78-26cd-4670-9d93-00aa30ea0132" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e863058e-65cb-4783-a3c7-719a8c20ad90" name="Просмотреть историю" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="465e1b27-b4d7-4050-a946-396ca7ec3371" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7c68b973-8241-44a5-82e9-ae2631eb1db0" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6bd906d2-8623-4400-8f73-1b101e7f6f5b" name="Менеджер операций" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4773a366-62b8-4464-acc3-12f6b8527d21" />
+        <targetEnds>
+          <association Id="b0a92811-a82e-4635-a3fe-50ca4ec82a6c" isDerived="false" sourceEndRoleName="Менеджер операций" targetEndRoleName="Конвертация валюты" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="97cc60cc-d132-42b5-8fb8-418401cd9287" LastKnownName="Конвертация валюты" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae0091e6-0561-4f4b-9b11-f76f70627de9" name="Менеджер операций" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="19f5a564-b47f-4433-a2d8-4039a78c841e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0be7fdd-d3de-4c09-9b8c-787f114915cb" name="Конвертация валюты" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="57ea85c5-606b-4bca-8469-4247115706ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a6c68a8d-896d-4c61-be32-e24902ac778c" />
+          </association>
+          <association Id="8298f856-4510-4e43-946c-3cb42a822bd1" isDerived="false" sourceEndRoleName="Менеджер операций" targetEndRoleName="Пополнение счета" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a7b135a9-aa0a-4dbc-bc99-e61627458d49" LastKnownName="Пополнение счета" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="092ad0e3-1023-430e-83dd-fe0c46b2afa4" name="Менеджер операций" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="85f8f883-8e64-453d-acc1-9092439e7aaa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f39b670e-8d91-4b49-a313-b992940a8c57" name="Пополнение счета" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a448cc5-3754-4532-a5cc-9d0e235a3ad4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8819a400-50f6-49e8-a914-65f14255d2de" />
+          </association>
+          <association Id="d35e79c7-8c86-4df0-879f-bc5791823afd" isDerived="false" sourceEndRoleName="Менеджер операций" targetEndRoleName="Снятие средств" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="587613f0-7847-4a78-bf91-13fcaf71eb5c" LastKnownName="Снятие средств" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5589cba-a370-44e8-9613-914749e2a2a4" name="Менеджер операций" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ad549be-ef0e-44fd-a551-f2b81cc7e267" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03ffdd12-16d3-4726-b416-241ac6df80c7" name="Снятие средств" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="60e521c4-f661-4014-a8fb-efb76abd8bfa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4dbc3d10-579f-45b2-a083-0d4dac034dc4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="052eb55b-6dd7-497c-bb3e-c5799f4f7df4" name="Операция со средствами" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d33522e-f20c-4024-b8d1-a5ecfa5676d3" />
+        <targetEnds>
+          <association Id="3f56ad1e-8d28-4b38-b4c7-27c7c6ab72ed" isDerived="false" sourceEndRoleName="Операция со средствами" targetEndRoleName="Менеджер операций" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="6bd906d2-8623-4400-8f73-1b101e7f6f5b" LastKnownName="Менеджер операций" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bb283b88-b8bc-4e25-961e-7538cc7fe4d8" name="Операция со средствами" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="120ad13b-cf63-44e7-8cc6-2c00617ea036" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c530aa2f-450c-4892-a903-f1d262c5de82" name="Менеджер операций" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc3dbfe5-3a51-4f94-8b06-e789196e16ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2095a3d2-af53-4c35-ae33-c3e3a22b62bb" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" LastKnownName="Операции с денежными средствами" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="993b5a21-3f4e-40a7-8fbf-7d927a880c9e" name="Платеж" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8382bd3-faa7-4937-b202-ceaf58893dc7" />
+        <extendedCases>
+          <extend Id="d436d3a9-7558-49be-952e-b5663fd4545f">
+            <useCaseMoniker Id="052eb55b-6dd7-497c-bb3e-c5799f4f7df4" LastKnownName="Операция со средствами" />
+            <elementDefinition Id="9ff95bc6-a7e9-4961-960c-882e6979306a" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" LastKnownName="Операции с денежными средствами" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f8700e74-83f2-4ca6-8f07-4d4a6610aa13" name="Перевод" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="02f21beb-7dbd-4df5-b20a-73716e2eb393" />
+        <extendedCases>
+          <extend Id="6c32740e-c3d1-419e-b728-1f52a813e87a">
+            <useCaseMoniker Id="052eb55b-6dd7-497c-bb3e-c5799f4f7df4" LastKnownName="Операция со средствами" />
+            <elementDefinition Id="91eb5ed1-7876-4464-8a94-ea9192bb6c47" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" LastKnownName="Операции с денежными средствами" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="06b8f96b-8f06-4d33-a93a-52345659dd35" name="Просмотреть историю" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6cc6df43-7a3b-4a38-a4fc-8c633f428798" />
+        <subjects>
+          <subsystemMoniker Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" LastKnownName="Операции с денежными средствами" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="97cc60cc-d132-42b5-8fb8-418401cd9287" name="Конвертация валюты" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ff2d4a1b-9876-4059-8c23-b0305592eef7" />
+        <subjects>
+          <subsystemMoniker Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" LastKnownName="Операции с денежными средствами" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="587613f0-7847-4a78-bf91-13fcaf71eb5c" name="Снятие средств" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2e14a46a-f1aa-4f52-83fa-13e3c1eae77c" />
+        <subjects>
+          <subsystemMoniker Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" LastKnownName="Операции с денежными средствами" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a7b135a9-aa0a-4dbc-bc99-e61627458d49" name="Пополнение счета" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d61424fc-f41f-4ad1-8f04-29f5d8533e17" />
+        <subjects>
+          <subsystemMoniker Id="45e33ca4-e8c8-48d3-b0a0-d8d00d86db5e" LastKnownName="Операции с денежными средствами" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="b3a5e311-3178-4b31-82e7-8ee2e9ede038" name="Diagrams">
+    <elementDefinition Id="5c407168-d898-4740-8518-8f66971621f4" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="caf2cbf6-f718-4e40-b38f-8a2420f36d29" name="UMLUseCaseDiagram1" linkedPackageId="a17b45e7-893f-4215-ab7c-d01a36a706bc" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="25f45d3c-252b-44cd-af68-eb4471c7b956">
+      <profileInstance Id="d6f97c68-0de0-40c4-86aa-70ae433155fb" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="777edf76-ca2e-4a02-8340-331aecdcf29e">
+      <profileInstance Id="1d59ecc4-9302-4777-8b09-24d822ba3522" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" name="Базовая функциональность" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9b212a69-a78f-41db-9640-bdf8676c74e2" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76e15856-e872-460f-84dd-bee7e8982437" />
+        <targetEnds>
+          <association Id="e60ecdeb-a8bf-4154-b550-8deff936b065" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Открыть панель администрирования" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="260bd379-2738-4ba5-8b5a-2171ce391585" LastKnownName="Открыть панель администрирования" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a740980c-3ad5-474b-aabd-b29c0852dae2" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4043ca43-d124-4c62-b863-2b9d5f958e22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe533e6d-d7c7-45db-bce6-917b94ed8c8b" name="Открыть панель администрирования" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="10ebea26-2080-4976-bf8d-2f5694e1d20b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="06247fbe-58cc-4916-9fd2-a5eb5ab16748" />
+          </association>
+          <association Id="7c62c47d-20de-45e1-a274-d8f001ef8832" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Войти в систему" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c325e2bd-d170-4d9a-8622-37c8bfda3960" LastKnownName="Войти в систему" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00821591-9700-431e-9983-4ea9abe9b4dd" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3a9dfbd3-2fe7-4731-af9b-4fc364aa24a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b89864b6-01de-494f-a797-eba9cef16cd2" name="Войти в систему" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="73738fb8-cf66-4a39-a81e-17eb2f3e5b9b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="81e7cbff-bca7-468b-a43d-e302709d102e" />
+          </association>
+          <association Id="3f53c616-6476-4fb8-8fdf-930f3cee498b" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Выйти из системы" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="17aa6602-fca7-4adc-8790-77e303bd3a62" LastKnownName="Выйти из системы" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db55f52c-5aef-43e6-ab98-a85bedde0db3" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4966dd42-0f65-46e1-8f64-eed3f478c3e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d4b7013-a47c-4087-9d9d-6a53edc33e54" name="Выйти из системы" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0b2dbc92-1244-4532-8ea2-35fbdc878f10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb9bbc71-d619-4333-a8c8-cdeb4c0bcd40" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4dcd6a9e-a1b1-482f-b116-375b3cd94b40" name="Клиент" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3817ba8-d62d-47a2-b5a0-15f07bb8f608" />
+        <targetEnds>
+          <association Id="5a5075a2-03c5-4f95-9639-bc3594304ef7" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Войти в систему" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c325e2bd-d170-4d9a-8622-37c8bfda3960" LastKnownName="Войти в систему" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38a94f4b-ec72-441f-b574-2578d2631d7c" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8528b9d-223a-4d62-9d7d-a06a5146fdb1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c92326fa-b618-41d5-9134-4fe325105875" name="Войти в систему" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="998a2319-81c2-4bce-a127-7d2bfc1d0893" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="88b1d62c-aff1-4cc8-bfc7-66d37eb68bc7" />
+          </association>
+          <association Id="eae4625d-c723-4980-887f-e100869740de" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Выйти из системы" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="17aa6602-fca7-4adc-8790-77e303bd3a62" LastKnownName="Выйти из системы" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18fe2b0f-4d60-470c-9ea5-46771fc52e2c" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="90987e78-eaf7-48f8-9536-ae5a70de98e0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="860aa455-5441-4311-8de2-9af61b2aa910" name="Выйти из системы" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f3387573-ff5b-470b-98ca-c400e1d889b7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7ce4a7e6-7ba0-4ddc-9142-29205b55c963" />
+          </association>
+          <association Id="0140ed64-333c-466a-b4ad-9d4f74b36f5b" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Выполнить операцию с денежными средствами" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1500f027-6160-4859-9059-1e213136e466" LastKnownName="Выполнить операцию с денежными средствами" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d561f88f-d808-459c-b273-b1847bea5707" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="072ebf8f-f050-4b10-8504-043bb591b899" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b03c376e-c03d-4d47-8906-b69fc58300d9" name="Выполнить операцию с денежными средствами" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d67f2c8c-e951-460a-b2fe-e42aba0b8008" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c043c6a1-44c3-4899-81ba-d7c9a941f16e" />
+          </association>
+          <association Id="01a01099-8a11-44db-9957-5d3a9167f0c3" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Открыть панель управления счетом" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="95a25cd9-536b-4c0c-96f7-1673a5fa87b3" LastKnownName="Открыть панель управления счетом" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="392be9e2-7687-460b-b026-ca9ff2058856" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2bff656d-8d8c-4d56-8aea-148bb370b357" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51c4ef9e-76b4-45d8-a420-2a9b6c75ed37" name="Открыть панель управления счетом" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="612ad5a9-5245-4c6b-a40d-2993364ab684" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="86b0491b-1797-47db-bcdf-099547bc8ec0" />
+          </association>
+          <association Id="015f5a5f-98e6-46c7-8191-213c7624e294" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Просмотреть курсы валют" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="78bd55e8-fc80-4e49-8f76-5a695bf65c55" LastKnownName="Просмотреть курсы валют" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cdd678d-ee08-4488-bbd9-0cce11dfa507" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="87f0f210-c0fd-4159-8d8b-89c97198d28d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f56e518c-6904-4529-85c0-4d49f8b0176d" name="Просмотреть курсы валют" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7ec71716-abd6-4d82-ae99-e60f8620cfbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0dcfea4d-5185-43ee-8e1e-75619ee4eb60" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="c325e2bd-d170-4d9a-8622-37c8bfda3960" name="Войти в систему" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc83dfbb-ecd3-4e22-b9df-7bf0aa692bc1" />
+        <subjects>
+          <subsystemMoniker Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" LastKnownName="Базовая функциональность" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="260bd379-2738-4ba5-8b5a-2171ce391585" name="Открыть панель администрирования" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="52d83dd6-5429-4a31-a090-c8560462e2dc" />
+        <additions>
+          <include Id="5f31185c-814e-4cbf-a5e3-3a7a0aa711c4">
+            <useCaseMoniker Id="b78b1d09-3d1b-4853-985e-55e03d585375" LastKnownName="Авторизация" />
+            <elementDefinition Id="dfe42896-c520-438d-861a-b6ed0d33c05c" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" LastKnownName="Базовая функциональность" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="95a25cd9-536b-4c0c-96f7-1673a5fa87b3" name="Открыть панель управления счетом" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43649938-df97-4fe2-a137-4475c87db4c4" />
+        <additions>
+          <include Id="4b6dd157-6acc-4fd9-a90f-801e62f0cc6d">
+            <useCaseMoniker Id="b78b1d09-3d1b-4853-985e-55e03d585375" LastKnownName="Авторизация" />
+            <elementDefinition Id="160db1f2-e2b8-4149-8a95-3fad3a82bb49" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" LastKnownName="Базовая функциональность" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="17aa6602-fca7-4adc-8790-77e303bd3a62" name="Выйти из системы" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a17da001-223c-49d6-8ed6-42c089704a03" />
+        <subjects>
+          <subsystemMoniker Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" LastKnownName="Базовая функциональность" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="78bd55e8-fc80-4e49-8f76-5a695bf65c55" name="Просмотреть курсы валют" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="335aa547-af8a-4616-b96e-1d65769b1e12" />
+        <additions>
+          <include Id="c54ee46b-667f-4c10-a960-3447fc7c2534">
+            <useCaseMoniker Id="b78b1d09-3d1b-4853-985e-55e03d585375" LastKnownName="Авторизация" />
+            <elementDefinition Id="694cf5d0-65e6-43f4-8878-f7c723568948" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" LastKnownName="Базовая функциональность" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1500f027-6160-4859-9059-1e213136e466" name="Выполнить операцию с денежными средствами" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b787cdd5-4464-4e0c-a006-88e06ec639e9" />
+        <additions>
+          <include Id="ee0119b6-1c7b-4f23-96f8-1e5054b8d6ec">
+            <useCaseMoniker Id="b78b1d09-3d1b-4853-985e-55e03d585375" LastKnownName="Авторизация" />
+            <elementDefinition Id="3f106b9d-a191-4c6e-b7f5-246811233b53" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" LastKnownName="Базовая функциональность" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b78b1d09-3d1b-4853-985e-55e03d585375" name="Авторизация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8508f1c9-a5b4-4fad-a4d9-6e358c3ba608" />
+        <subjects>
+          <subsystemMoniker Id="62c48dae-150f-4d28-9562-a8eb5afcd7c4" LastKnownName="Базовая функциональность" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a17b45e7-893f-4215-ab7c-d01a36a706bc" name="Diagrams">
+    <elementDefinition Id="5c407168-d898-4740-8518-8f66971621f4" />
+  </package>
+</useCaseModelRoot>
